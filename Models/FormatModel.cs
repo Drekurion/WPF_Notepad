@@ -19,7 +19,7 @@ namespace WPF_Notepad.Models
 			set => OnPropertyChanged(ref weight, value);
 		}
 
-		private FontFamily family;
+		private FontFamily family = new FontFamily("Consolas");
 		public FontFamily Family
 		{
 			get => family;
@@ -44,7 +44,7 @@ namespace WPF_Notepad.Models
 			set => OnPropertyChanged(ref isWrapped, value);
 		}
 
-		private double size;
+		private double size = 11;
 		public double Size
 		{
 			get => size;
